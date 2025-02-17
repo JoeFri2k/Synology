@@ -84,3 +84,17 @@ ip addr add 192.168.178.30/32 dev mvl-brg
 ip link set mvl-brg up
 ip route add 192.168.178.16/28 dev mvl-brg
 ```
+Wenn alles erfolgreich abgelaufen ist, dann sollte man jetzt den Container unter seiner eigenen Adresse anpingen können. 
+
+
+
+
+
+----
+
+
+
+
+
+
+

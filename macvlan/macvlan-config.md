@@ -12,10 +12,11 @@ Der DHCP Server ist so konfiguriert, dass er IP-Adressen erst abe dem Bereich 19
 - Im Router/DHCP-Server sicher stellen, dass der Adressbereich nicht anderweitig verwendet wird. 
 ## 1 - Schnittstelle herausfinden
 
+Sich mittels SSH mit der Synology verbinden und den Befehl 'ifconfig" ausführen
 ```bash
 ifconfig
 ```
-- bei der Ausgabe prüfen an  welcher Schnittstelle eth0 oder ovs_eth oder bound_xxx die IP-Adresse der Synology vorkommt.
+- bei der Ausgabe prüfen an  welcher Schnittstelle **eth0** oder **ovs_eth** oder bound_xxx die IP-Adresse der Synology vorkommt.
 ## 2 - macvlan_conf anlegen
 
 - Name: macvlan_conf
@@ -27,7 +28,7 @@ ifconfig
 
 ## 3 - macvlan Netzerstellen
 
-
+Hier wählt amn wieder neues Netz anlegen 
 ## 4 -  Container dem Netzwerk hinzufügen
 
 ```yaml

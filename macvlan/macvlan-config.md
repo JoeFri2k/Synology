@@ -26,9 +26,13 @@ ifconfig
 - IP-range 192.168.178.16/28
 - Gateway: 192.168.178.1
 
+![image](https://github.com/JoeFri2k/Synology/blob/f6d8e8a6ed0899e9b4fcf0c9f9e0af251090e483/macvlan/img/macvlan_conf.png)
+
 ## 3 - macvlan Netzerstellen
 
-Hier wählt amn wieder neues Netz anlegen 
+Hier wählt man wieder neues Netz anlegen selektiert jedoch die Option **Creation**
+![image](https://github.com/JoeFri2k/Synology/blob/f6d8e8a6ed0899e9b4fcf0c9f9e0af251090e483/macvlan/img/macvlan_network.png)
+
 ## 4 -  Container dem Netzwerk hinzufügen
 
 ```yaml
@@ -64,6 +68,9 @@ networks:
 ```
 ## 5 - macvlan und Netzwerkkarte "bridgen"
 
+die Befehle, kann man der Reihe nach ausführen und testen ob dies das funktioniert. Wenn das alles geklappt hat dann das ganze in einen Skript packen und dieses automatisch mit dem Start der Synology ausführen. 
+
+Das "cryptische" in der While-Schleife ist eine Funktion die darauf wartet, dass der Dockerservice gestartet ist, und wenn das der Fall ist, dann wir das Skript zu ende ausgeführt.
 
 ```shell
 #!/bin/bash

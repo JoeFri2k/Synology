@@ -43,9 +43,11 @@ services:
     image: pihole/pihole:latest
     # For DHCP it is recommended to remove these ports and instead add: network_mode: "host"
     hostname: pihole
+#################################################################
     networks:
       mcvlan_ovs_eth0:
         ipv4_address: 192.168.178.20
+#################################################################
     ports:
       - 53:53/tcp
       - 53:53/udp
@@ -62,10 +64,16 @@ services:
 #    cap_add:
 #     - NET_ADMIN # Required if you are using Pi-hole as your DHCP server, else not needed
     restart: unless-stopped
+#################################################################
 networks:
   mcvlan_ovs_eth0: # Definition des Netzwerks
     external: true # Gibt an, dass das Netzwerk bereits existiert
+#################################################################
 ```
+
+
+
+
 ## 5 - macvlan und Netzwerkkarte "bridgen"
 
 die Befehle, kann man der Reihe nach ausführen und testen ob dies das funktioniert. Wenn das alles geklappt hat dann das ganze in einen Skript packen und dieses automatisch mit dem Start der Synology ausführen. 

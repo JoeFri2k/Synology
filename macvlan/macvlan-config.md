@@ -6,7 +6,8 @@ Der DHCP Server ist so konfiguriert, dass er IP-Adressen erst abe dem Bereich 19
 
 [IP-Calculator](https://jodies.de/ipcalc?host=192.168.178.16&mask1=28&mask2=)
 
-![[Pasted image 20250217214128.png]]
+[![image](https://github.com/user-attachments/assets/04a68ff9-8037-49ba-8b6b-83df5a5a8094)
+
 
 - Im Router/DHCP-Server sicher stellen, dass der Adressbereich nicht anderweitig verwendet wird. 
 ## 1 - Schnittstelle herausfinden

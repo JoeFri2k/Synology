@@ -33,7 +33,7 @@ ifconfig
 Hier wählt man wieder neues Netz anlegen selektiert jedoch die Option **Creation**
 ![image](https://github.com/JoeFri2k/Synology/blob/f6d8e8a6ed0899e9b4fcf0c9f9e0af251090e483/macvlan/img/macvlan_network.png)
 
-## 4 -  Container dem Netzwerk hinzufügen
+## 4 -  Container dem Netzwerk hinzufügen compose.yml (stackfile)
 
 ```yaml
 # More info at https://github.com/pi-hole/docker-pi-hole/ and https://docs.pi-hole.net/

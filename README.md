@@ -1,4 +1,7 @@
 # How to SetUp macvlan
+
+[Link](https://github.com/JoeFri2k/Synology/blob/2a99353dbf4f59c8fc1657b3068ea3390ab20bd2/macvlan/macvlan-config.md)
+
 Hier folgt eine Beschreibung, wie man macvlan auf der Synology einrichtet. Das ganze als eine "Zusammanfassung" Die Beschreibung gilt für die Adress 192.168.178.20 sollten andere IP-Adressen benötigt werden so muss es dem jeweiligen Netzwerk angepasst werden.
 Der DHCP Server ist so konfiguriert, dass er IP-Adressen erst abe dem Bereich 192.168.178.100 - 200 vergibt.
 
